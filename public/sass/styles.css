@@ -542,6 +542,10 @@ header .corner-signup {
   margin-top: 10%;
 }
 
+.landing-home .title-container p {
+  margin-bottom: 80px;
+}
+
 .landing-home .title-container a {
   width: 150px;
   border-radius: 6px;
@@ -643,7 +647,6 @@ header .corner-signup {
     display: block;
     font-size: 1.1rem;
     margin: auto;
-    margin-top: 50px;
   }
   .home-quote {
     display: none;
