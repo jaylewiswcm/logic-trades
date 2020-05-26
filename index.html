@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/styles.css" type="text/css" />
+    <title>Logic Trades</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <img src="/assets/logo.svg" alt="Logic Trades" class="logo" />
+      <ul>
+        <li>
+          <a href="/" class="services">
+            <span>
+              Services
+              <img
+                src="/assets/down-arrow.svg"
+                alt="dropdown"
+                class="ddArrow"
+              />
+            </span>
+          </a>
+        </li>
+        <li><a href="/">Who we are</a></li>
+        <li><a href="/">Questions</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+      <a class="corner-signup">Sign Up</a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/">Learn</a></li>
+        <li><a href="/">Trade</a></li>
+        <li><a href="/">Team</a></li>
+        <li><a href="/">Questions</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a class="dropdown-signup">Sign Up</a></li>
+      </ul>
+      <button class="burger-menu" onclick="showMenu()">
+        <img src="/assets/icons/burger.svg" alt="menu" />
+      </button>
+    </header>
+    <div class="landing-home">
+      <div class="title-container">
+        <h1 class="page-title">Want to start trading through Forex</h1>
+        <p class="page-subheading">
+          We're a team of traders who are here to help you make money through
+          trading online
+        </p>
+        <a class="link-button">Join us today</a>
+      </div>
+      <div class="home-quote">
+        <img src="/assets/left-quote.svg" alt="Quote Marks" />
+        <p>
+          The team is absolutely fantastic taught me everything about trading.
+          Their support every step of the way is just great.
+        </p>
+        <img
+          src="/assets/right-quote.svg"
+          alt="Quote Marks"
+          class="right-mark"
+        />
+      </div>
+    </div>
+    <div class="home-navigation">
+      <div class="nav-grid">
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 1)"
+          onmouseout="changeBack(this, 1)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/learn.svg" alt="Courses" />
+          <h3>Online Course</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 2)"
+          onmouseout="changeBack(this, 2)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/webinar.svg" alt="Courses" />
+          <h3>Live Webinars</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 3)"
+          onmouseout="changeBack(this, 3)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/signals.svg" alt="Signals" />
+          <h3>Join our signals</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 4)"
+          onmouseout="changeBack(this, 4)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/testimonials.svg" alt="Testimonials" />
+          <h3>Testimonials</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 5)"
+          onmouseout="changeBack(this, 5)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/team.svg" alt="The Team" />
+          <h3>Meet The Team</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 6)"
+          onmouseout="changeBack(this, 6)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/faq.svg" alt="FAQ" />
+          <h3>Frequent Questions</h3>
+        </div>
+        <div
+          class="nav-item"
+          onmouseover="changeColor(this, 7)"
+          onmouseout="changeBack(this, 7)"
+        >
+          <span class="new-background"></span>
+          <img src="/assets/icons/contact.svg" alt="contact" />
+          <h3>Contact The Team</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="center-con">
+        <h2>Join the team to start your trading journey</h2>
+        <div class="button-align">
+          <div
+            class="footer-link"
+            onmouseover="buttonOver(this)"
+            onmouseout="buttonOut(this)"
+          >
+            <span class="new-background"></span>
+            <h3>Learn</h3>
+            <p>Sign up to our courses</p>
+          </div>
+          <div
+            class="footer-link"
+            onmouseover="buttonOver(this)"
+            onmouseout="buttonOut(this)"
+          >
+            <span class="new-background"></span>
+            <h3>Trade</h3>
+            <p>join our signals group</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img src="assets/logo.svg" alt="Logic logo" class="footer-logo" />
+        <div class="developed-by">
+          <h4>Jay Lewis</h4>
+          <p>Design and Development</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
