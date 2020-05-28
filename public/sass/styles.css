@@ -618,6 +618,11 @@ header .corner-signup {
           justify-content: center;
 }
 
+.home-navigation a {
+  color: #3f4045;
+  text-decoration: none;
+}
+
 .home-navigation .nav-grid {
   display: -ms-grid;
   display: grid;

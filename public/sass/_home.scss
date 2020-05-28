@@ -47,6 +47,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  a {
+    color: $text;
+    text-decoration: none;
+  }
   .nav-grid {
     display: grid;
     grid-template-rows: auto;
