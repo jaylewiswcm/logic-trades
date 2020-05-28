@@ -18,5 +18,8 @@ app.get("/courses2", (req, res) => {
 app.get("/courses3", (req, res) => {
   res.sendFile(path.join(__dirname + "/courses3.html"));
 });
+app.get("/testimonials", (req, res) => {
+  res.sendFile(path.join(__dirname + "/testimonials.html"));
+});
 
 app.listen(port, () => console.log(`App listening om port ${port}`));

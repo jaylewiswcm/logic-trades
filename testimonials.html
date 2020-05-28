@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/sass/styles.css" type="text/css" />
+    <title>Logic Trades</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <a href="/">
+        <img src="/assets/logo.svg" alt="Logic Trades" class="logo" />
+      </a>
+      <ul class="navbar-menu">
+        <li class="services-menu">
+          <button class="services" onclick="dropServices()">
+            <span>
+              Services
+              <img
+                src="/assets/down-arrow.svg"
+                alt="dropdown"
+                class="ddArrow"
+              />
+            </span>
+          </button>
+          <ul class="drop-services">
+            <li><a href="/courses">Our Courses</a></li>
+            <li><a href="/courses2">Our Webinars</a></li>
+            <li><a href="/courses3">Our Playground</a></li>
+            <li><a href="/">1 to 1</a></li>
+            <li><a href="/">Logic Analyses</a></li>
+            <li><a href="/">Our Trades</a></li>
+          </ul>
+        </li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/">Who we are</a></li>
+        <li><a href="/">Questions</a></li>
+        <li><a href="/">Contact</a></li>
+      </ul>
+
+      <a class="corner-signup">Sign Up</a>
+
+      <ul class="dropdown-menu">
+        <li><a href="/courses">Learn</a></li>
+        <li><a href="/courses2">Trade</a></li>
+        <li><a href="/testimonials">Testimonials</a></li>
+        <li><a href="/courses3">Team</a></li>
+        <li><a href="/">Questions</a></li>
+        <li><a href="/">Contact</a></li>
+        <li><a class="dropdown-signup">Sign Up</a></li>
+      </ul>
+      <button class="burger-menu" onclick="showMenu()">
+        <img src="/assets/icons/burger.svg" alt="menu" />
+      </button>
+    </header>
+    <div class="header-container">
+      <h2 class="page-title">Take our client’s word for it</h2>
+    </div>
+    <div class="second-container">
+      <div class="reviews">
+        <button class="review-profile">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Gregg James</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+          </div>
+        </button>
+        <button class="review-profile">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Lucy Bulgar</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+          </div>
+        </button>
+        <button class="review-profile">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Phil Lenny</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+          </div>
+        </button>
+        <button class="review-profile">
+          <span class="new-background"></span>
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p class="active-text">Megan Wind</p>
+          <div class="star-container">
+            <img src="/assets/star-white.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+          </div>
+        </button>
+        <div class="review-responsive">
+          <!-- <div class="top-of-review">
+            <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+            <p>Megan Wind</p>
+            <div class="star-container">
+              <img src="/assets/star-orange.svg" alt="Star Orange" />
+              <img src="/assets/star-orange.svg" alt="Star Orange" />
+              <img src="/assets/star-orange.svg" alt="Star Orange" />
+              <img src="/assets/star-white.svg" alt="Star White" />
+              <img src="/assets/star-white.svg" alt="Star White" />
+            </div>
+          </div> -->
+          <h4>Aliquam t laoreet velit, nec molestie eros eleifend vel.</h4>
+          <p>
+            Aliquam t laoreet velit, nec molestie eros eleifend vel. Curabitur
+            vel lorem id felis aliquet vehicula. In volutpat, ipsum ut porta
+            blandit, placerat laoreet velit, nec molestie eros eleifend vel.
+            Curabitur vel lorem id felis aliquet vehicula. In volutpat, ipsum ut
+            porta blandit.
+          </p>
+          <a href="/">Trustpilot.com</a>
+        </div>
+        <button class="review-profile">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Lewis King</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star White" />
+          </div>
+        </button>
+        <button class="review-profile">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Jim Wright</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star White" />
+            <img src="/assets/star-white.svg" alt="Star White" />
+          </div>
+        </button>
+      </div>
+      <div class="review">
+        <div class="top-of-review">
+          <img src="/assets/avatar.svg" alt="avatar" class="avatar" />
+          <p>Megan Wind</p>
+          <div class="star-container">
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-orange.svg" alt="Star Orange" />
+            <img src="/assets/star-white.svg" alt="Star White" />
+            <img src="/assets/star-white.svg" alt="Star White" />
+          </div>
+        </div>
+        <h4>Aliquam t laoreet velit, nec molestie eros eleifend vel.</h4>
+        <p>
+          Aliquam t laoreet velit, nec molestie eros eleifend vel. Curabitur vel
+          lorem id felis aliquet vehicula. In volutpat, ipsum ut porta blandit,
+          placerat laoreet velit, nec molestie eros eleifend vel. Curabitur vel
+          lorem id felis aliquet vehicula. In volutpat, ipsum ut porta blandit.
+        </p>
+        <a href="/">Trustpilot.com</a>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="center-con">
+        <h2>Join the team to start your trading journey</h2>
+        <div class="button-align">
+          <div
+            class="footer-link"
+            onmouseover="buttonOver(this)"
+            onmouseout="buttonOut(this)"
+          >
+            <span class="new-background"></span>
+            <h3>Learn</h3>
+            <p>Sign up to our courses</p>
+          </div>
+          <div
+            class="footer-link"
+            onmouseover="buttonOver(this)"
+            onmouseout="buttonOut(this)"
+          >
+            <span class="new-background"></span>
+            <h3>Trade</h3>
+            <p>join our signals group</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <img src="assets/logo.svg" alt="Logic logo" class="footer-logo" />
+        <div class="developed-by">
+          <h4>Jay Lewis</h4>
+          <p>Design and Development</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>
