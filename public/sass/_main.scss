@@ -1,13 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 body {
   width: 100%;
   height: 100%;
   background: $bg;
   font-family: "Muli";
-  font-size: 18px;
+  // font-size: 25px;
   color: $text;
   // padding: 0 10%;
   box-sizing: border-box;
@@ -29,7 +30,7 @@ header {
   .logo {
     margin-right: 20px;
   }
-  ul {
+  .navbar-menu {
     list-style-type: none;
     display: flex;
     align-content: center;
@@ -58,26 +59,44 @@ header {
     margin-left: auto;
     border: none;
     background: none;
+    outline: none;
     cursor: pointer;
     z-index: 4;
   }
-  .dropdown-menu {
-    display: none;
-    flex-direction: column;
 
-    text-align: right;
+  .dropdown-menu {
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     position: absolute;
     right: 0;
     top: 70px;
-    padding-left: 10px;
     // margin-right: 10%;
+    padding-left: 10px;
+    padding-right: 20px;
+    // margin-right: 8%;
     text-align: right;
     // margin-left: 10px;
     background: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: height 0.5s;
+    overflow: hidden;
     li {
       padding-bottom: 10px;
       align-self: flex-end;
+      list-style-type: none;
+      font-size: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $text;
+        width: 100%;
+      }
+    }
+    .dropdown-signup {
+      color: $orange;
+      cursor: pointer;
     }
   }
 
@@ -85,15 +104,59 @@ header {
     margin-left: auto;
     width: 105px;
     height: 30px;
+    line-height: 30px;
+    // padding: 1px 10px;
     border-radius: 20px;
     text-align: center;
-    line-height: 28px;
     background: linear-gradient(to right, $orange, #f7882f, $yellow);
     color: white;
     font-size: 0.9rem;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.18);
     cursor: pointer;
     z-index: 5;
+  }
+}
+
+.services-menu {
+  position: relative;
+
+  button {
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-family: "Muli", sans-serif;
+    color: $text;
+    outline: none;
+    cursor: pointer;
+  }
+  .drop-services {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+    // margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding-left: 20px;
+    width: 140px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 0px;
+    overflow: hidden;
+
+    transition: height 0.3s;
+    li {
+      list-style-type: none;
+      padding-bottom: 12px;
+      align-self: flex-start;
+    }
+    a {
+      text-decoration: none;
+      color: $text;
+      &:hover {
+        font-weight: 600;
+        color: $orange;
+      }
+    }
   }
 }
 
@@ -120,10 +183,25 @@ header {
   box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.18);
   cursor: pointer;
 
+  position: relative;
+  z-index: 2;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
+.header-container {
+  width: 100%;
+  height: 100vh;
+  background: white;
+  display: flex;
+  box-shadow: $smallShadow;
+  z-index: 1;
+  h2 {
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
 .footer {
   width: 100%;
   height: 100vh;
@@ -136,35 +214,37 @@ header {
   .center-con {
     align-self: center;
     margin: auto;
-    // width: 60%;
     text-align: center;
-    // h2 {
-    //   // font-size: 2.5rem;
-    //   // font-weight: 700;
-    // }
+    h2 {
+      font-size: 2rem;
+    }
     .button-align {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
       padding-top: 20px;
       box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
       .footer-link {
         position: relative;
         // width: 30%;
         // height: 80px;
+        height: 100%;
+        padding: 5%;
         border: 1px $orange solid;
         box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.16);
         background-color: white;
         border-radius: 6px;
         // padding-left: 20px;
-        margin: 0 10px;
+        // margin: 0 10px;
 
         text-align: left;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
+        // display: grid;
+        // grid-template-columns: repeat(auto-fit, 1fr);
+        // gap: 15px;
         box-sizing: border-box;
         cursor: pointer;
 
@@ -178,13 +258,13 @@ header {
         }
         h3 {
           color: $orange;
-          // font-size: 1.2rem;
-          // font-weight: 600;
+          font-size: 1.2rem;
+          font-weight: 600;
           z-index: 2;
         }
         p {
-          // font-size: 0.9rem;
-          // font-weight: 500;
+          font-size: 0.9rem;
+          font-weight: 500;
           z-index: 2;
         }
       }
@@ -221,14 +301,20 @@ header {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: linear-gradient(to right, $orange, #f7882f, $yellow);
+  background: $gradient;
   transition: opacity 0.5s;
   z-index: 1;
 }
 
+.active-text {
+  color: white;
+}
 @media screen and (max-width: 409px) {
+  * {
+    font-size: 12px;
+  }
   header {
-    ul,
+    .navbar-menu,
     .corner-signup {
       display: none;
     }
@@ -238,45 +324,28 @@ header {
   }
   .center-con {
     width: 100%;
-    h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-    .footer-link {
-      width: 250px;
-      height: 60px;
-      padding-left: 5px;
-      h3 {
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-      p {
-        font-size: 0.7rem;
-        font-weight: 400;
-      }
-      .button-align {
-        flex-direction: row;
-      }
-    }
   }
   .footer-logo {
     width: 20%;
   }
-  .developed-by {
-    h4 {
-      font-size: 0.9rem;
-    }
-    p {
-      font-size: 0.7rem;
-      // color: $orange;
-      // opacity: 0.8;
-    }
-  }
+  // .developed-by {
+  //   h4 {
+  //     font-size: 0.9rem;
+  //   }
+  //   p {
+  //     font-size: 0.7rem;
+  //     // color: $orange;
+  //     // opacity: 0.8;
+  //   }
+  // }
 }
 
 @media screen and (min-width: 410px) and (max-width: 750px) {
+  * {
+    font-size: 13px;
+  }
   header {
-    ul,
+    .navbar-menu,
     .corner-signup {
       display: none;
     }
@@ -286,26 +355,6 @@ header {
   }
   .center-con {
     width: 75%;
-    h2 {
-      font-size: 1.9rem;
-      font-weight: 700;
-    }
-    .footer-link {
-      width: 250px;
-      height: 60px;
-      padding-left: 5px;
-      h3 {
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      p {
-        font-size: 0.8rem;
-        font-weight: 400;
-      }
-      .button-align {
-        flex-direction: row;
-      }
-    }
   }
 }
 @media screen and (min-width: 751px) and (max-width: 1000px) {
@@ -314,86 +363,46 @@ header {
   }
   .center-con {
     width: 70%;
-    h2 {
-      font-size: 2.2rem;
-      font-weight: 700;
-    }
-    .footer-link {
-      width: 40%;
-      height: 80px;
-      padding-left: 20px;
-      h3 {
-        font-size: 1rem;
-        font-weight: 500;
-      }
-      p {
-        font-size: 0.8rem;
-        font-weight: 400;
-      }
+    .button-align {
+      width: 70%;
+      margin: 0 auto;
     }
   }
 }
 @media screen and (min-width: 1001px) and (max-width: 1499px) {
-  .center-con {
-    width: 60%;
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    .footer-link {
-      width: 30%;
-      height: 80px;
-      padding-left: 20px;
-      h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      p {
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1500px) and (max-width: 1899px) {
   body {
     font-size: 18px;
   }
   .center-con {
     width: 60%;
-    .footer-link {
-      width: 30%;
-      height: 80px;
-      padding-left: 20px;
-      h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      p {
-        font-size: 0.9rem;
-        font-weight: 500;
-      }
+    .button-align {
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1899px) {
+  * {
+    font-size: 18px;
+  }
+  .center-con {
+    width: 60%;
+    .button-align {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 }
 @media screen and (min-width: 1900px) {
-  body {
-    font-size: 2rem;
+  * {
+    font-size: 25px;
   }
   .center-con {
     width: 60%;
-    .footer-link {
-      width: 30%;
-      height: 100px;
-      padding-left: 20px;
-      h3 {
-        font-size: 1.5rem;
-        font-weight: 600;
-      }
-      p {
-        font-size: 1.4rem;
-        font-weight: 500;
-      }
+
+    .button-align {
+      width: 60%;
+      margin: 0 auto;
     }
   }
 }

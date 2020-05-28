@@ -16,11 +16,22 @@ var dropdown = document.getElementsByClassName("dropdown-menu")[0];
 var counter;
 const showMenu = () => {
   if (counter === undefined || counter === 2) {
-    dropdown.style.display = "flex";
+    dropdown.style.height = "220px";
     return (counter = 1);
   } else {
-    dropdown.style.display = "none";
+    dropdown.style.height = "0px";
     return (counter = 2);
+  }
+};
+const services = document.getElementsByClassName("drop-services")[0];
+var c;
+const dropServices = () => {
+  if (c === undefined || c === 2) {
+    services.style.height = "200px";
+    return (c = 1);
+  } else {
+    services.style.height = "0px";
+    return (c = 2);
   }
 };
 
@@ -105,9 +116,11 @@ const changeBack = (e, x) => {
 const buttonOver = (e) => {
   e.children[0].style.opacity = "1";
   e.children[1].style.color = "white";
+  e.style.color = "white";
 };
 
 const buttonOut = (e) => {
   e.children[0].style.opacity = "0";
+  e.style.color = "#3f4045";
   e.children[1].style.color = "#f76d2f";
 };

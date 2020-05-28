@@ -2,6 +2,11 @@ $bg: #f7f7f7;
 $orange: #f76d2f;
 $yellow: #f7c92f;
 $text: #3f4045;
+$gradient: linear-gradient(to right, $orange, #f7882f, $yellow);
+$smallShadow: 0 3px 20px rgba(0, 0, 0, 0.13);
+$divShadow: 0 0 16px rgba(0, 0, 0, 0.13);
+
+$font: "muli", sans-serif;
 
 /* muli-regular - latin */
 @font-face {
@@ -104,3 +109,4 @@ $text: #3f4045;
 @import "./main";
 @import "./navbar";
 @import "./home";
+@import "./learn";
