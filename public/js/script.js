@@ -16,7 +16,7 @@ var dropdown = document.getElementsByClassName("dropdown-menu")[0];
 var counter;
 const showMenu = () => {
   if (counter === undefined || counter === 2) {
-    dropdown.style.height = "220px";
+    dropdown.style.height = "210px";
     return (counter = 1);
   } else {
     dropdown.style.height = "0px";

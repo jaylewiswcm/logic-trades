@@ -187,13 +187,13 @@ header .dropdown-menu li {
   -ms-flex-item-align: end;
       align-self: flex-end;
   list-style-type: none;
-  font-size: 1rem;
 }
 
 header .dropdown-menu li a {
   text-decoration: none;
   color: #3f4045;
   width: 100%;
+  font-size: 1.2rem;
 }
 
 header .dropdown-menu .dropdown-signup {
