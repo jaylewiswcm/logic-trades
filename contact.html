@@ -42,7 +42,7 @@
 
       <ul class="dropdown-menu">
         <li><a href="/courses">Learn</a></li>
-        <li><a href="/trade">Trade</a></li>
+        <li><a href="/courses2">Trade</a></li>
         <li><a href="/testimonials">Testimonials</a></li>
         <li><a href="/the-team">Team</a></li>
         <li><a href="/faq">Questions</a></li>
@@ -53,40 +53,39 @@
         <img src="/assets/icons/burger.svg" alt="menu" />
       </button>
     </header>
-    <div class="header-container">
-      <h2 class="page-title">Who are we?</h2>
-      <p>
-        We’re a team of traders who are here to help you make money through
-        trading online.
-      </p>
+    <div class="contact-header">
+      <h2 class="page-title">Contact Us</h2>
     </div>
-    <div class="team-container">
-      <div class="team-grid">
-        <div class="member-container" onclick="viewMember(this)">
-          <img src="/assets/team/member-1.png" alt="Team Member" />
-          <h4>Dylan Ostler</h4>
-          <p>Team Founder</p>
+    <div class="contact-container">
+      <div class="left-contact">
+        <div class="social-contact-headers">
+          <h4>Our Social Media</h4>
         </div>
-        <div class="member-container">
-          <img src="/assets/team/member-2.png" alt="Team Member" />
-          <h4>David Williams</h4>
-          <p>Team Member</p>
+        <div class="icon-container">
+          <img src="/assets/icons/instagram.svg" alt="instagram" />
+          <img src="/assets/icons/youtube.svg" alt="youtube" />
         </div>
-        <div class="member-container">
-          <img src="/assets/team/member-3.png" alt="Team Member" />
-          <h4>Brian Hawkings</h4>
-          <p>Team Member</p>
+        <div class="social-contact-headers">
+          <h4>Our Contact Info</h4>
         </div>
-        <div class="member-container">
-          <img src="/assets/team/member-4.png" alt="Team Member" />
-          <h4>Annie Jennings</h4>
-          <p>Team Member</p>
+        <div class="icon-container">
+          <img src="/assets/icons/email.svg" alt="email" />
         </div>
-        <div class="member-container">
-          <img src="/assets/team/member-5.png" alt="Team Member" />
-          <h4>Cohan Law</h4>
-          <p>Team Member</p>
-        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="John Doe" />
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="Johndoe@logictrades.com" />
+          <label for="message">Message</label>
+          <input
+            type="text"
+            id="message"
+            placeholder="How do I join the team?"
+          />
+          <input type="submit" class="submit" placeholder="Submit" />
+        </form>
       </div>
     </div>
     <div class="footer">

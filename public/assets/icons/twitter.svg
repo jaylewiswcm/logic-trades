@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <linearGradient id="linear-gradient" y1="-0.069" x2="1.371" y2="1.857" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f76d2f"/>
+      <stop offset="1" stop-color="#f7c92f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_207" data-name="Group 207" transform="translate(-475 -365)">
+    <circle id="Ellipse_36" data-name="Ellipse 36" cx="28.5" cy="28.5" r="28.5" transform="translate(475 365)" fill="#fff"/>
+    <g id="brands-and-logotypes_1_" data-name="brands-and-logotypes (1)" transform="translate(488 333)">
+      <g id="Group_102" data-name="Group 102" transform="translate(0 48)">
+        <path id="Path_105" data-name="Path 105" d="M31.774,51.056a13.581,13.581,0,0,1-3.753,1.029,6.477,6.477,0,0,0,2.866-3.6,13.018,13.018,0,0,1-4.131,1.577,6.514,6.514,0,0,0-11.268,4.454A6.707,6.707,0,0,0,15.639,56,18.438,18.438,0,0,1,2.212,49.188a6.516,6.516,0,0,0,2,8.706,6.433,6.433,0,0,1-2.943-.8v.071a6.544,6.544,0,0,0,5.219,6.4,6.5,6.5,0,0,1-1.708.214,5.76,5.76,0,0,1-1.233-.111A6.576,6.576,0,0,0,9.635,68.2a13.089,13.089,0,0,1-8.077,2.778A12.2,12.2,0,0,1,0,70.893a18.339,18.339,0,0,0,9.993,2.923c11.987,0,18.54-9.929,18.54-18.536,0-.288-.01-.566-.024-.842A13,13,0,0,0,31.774,51.056Z" transform="translate(0 -48)" fill="url(#linear-gradient)"/>
+      </g>
+    </g>
+  </g>
+</svg>

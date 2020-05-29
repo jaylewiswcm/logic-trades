@@ -27,5 +27,11 @@ app.get("/testimonials", (req, res) => {
 app.get("/the-team", (req, res) => {
   res.sendFile(path.join(__dirname + "/team.html"));
 });
+app.get("/faq", (req, res) => {
+  res.sendFile(path.join(__dirname + "/faq.html"));
+});
+app.get("/contact", (req, res) => {
+  res.sendFile(path.join(__dirname + "/contact.html"));
+});
 
 app.listen(port, () => console.log(`App listening om port ${port}`));

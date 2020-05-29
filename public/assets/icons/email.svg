@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.217" y1="-0.324" x2="1" y2="1.757" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f76d2f"/>
+      <stop offset="1" stop-color="#f7c92f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_208" data-name="Group 208" transform="translate(-392 -569)">
+    <circle id="Ellipse_37" data-name="Ellipse 37" cx="28.5" cy="28.5" r="28.5" transform="translate(392 569)" fill="#fff"/>
+    <g id="envelopes" transform="translate(406 525)">
+      <g id="Group_104" data-name="Group 104" transform="translate(1.459 61)">
+        <g id="Group_103" data-name="Group 103" transform="translate(0 0)">
+          <path id="Path_106" data-name="Path 106" d="M50.746,61H26.814a2.522,2.522,0,0,0-1.093.256l13,13,2.914-2.8h0l10.2-10.2A2.522,2.522,0,0,0,50.746,61Z" transform="translate(-25.721 -61)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_106" data-name="Group 106" transform="translate(19.18 62.459)">
+        <g id="Group_105" data-name="Group 105" transform="translate(0 0)">
+          <path id="Path_107" data-name="Path 107" d="M347.813,86.728l-9.6,9.6,9.6,9.6a2.522,2.522,0,0,0,.256-1.093V87.821A2.522,2.522,0,0,0,347.813,86.728Z" transform="translate(-338.213 -86.728)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_108" data-name="Group 108" transform="translate(0 62.459)">
+        <g id="Group_107" data-name="Group 107" transform="translate(0 0)">
+          <path id="Path_108" data-name="Path 108" d="M.256,86.721A2.522,2.522,0,0,0,0,87.814v17.013a2.523,2.523,0,0,0,.256,1.093l9.6-9.6Z" transform="translate(0 -86.721)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_110" data-name="Group 110" transform="translate(1.458 73.261)">
+        <g id="Group_109" data-name="Group 109" transform="translate(0 0)">
+          <path id="Path_109" data-name="Path 109" d="M42.233,277.211l-2.915,2.8a.85.85,0,0,1-1.2,0l-2.8-2.8-9.6,9.6a2.523,2.523,0,0,0,1.094.256H50.739a2.522,2.522,0,0,0,1.093-.256Z" transform="translate(-25.714 -277.211)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

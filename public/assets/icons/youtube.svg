@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="57" height="57" viewBox="0 0 57 57">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.066" y1="-0.328" x2="1.372" y2="1.592" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f76d2f"/>
+      <stop offset="1" stop-color="#f7c92f"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_206" data-name="Group 206" transform="translate(-392 -365)">
+    <path id="Path_200" data-name="Path 200" d="M28.5,0A28.5,28.5,0,1,1,0,28.5,28.5,28.5,0,0,1,28.5,0Z" transform="translate(392 365)" fill="#fff"/>
+    <path id="social-media" d="M31.676-2.539a4.052,4.052,0,0,0-2.85-2.851c-2.531-.692-12.655-.692-12.655-.692s-10.123,0-12.654.666A4.134,4.134,0,0,0,.666-2.539,42.694,42.694,0,0,0,0,5.24a42.537,42.537,0,0,0,.666,7.779A4.052,4.052,0,0,0,3.517,15.87c2.557.693,12.654.693,12.654.693s10.123,0,12.654-.666a4.052,4.052,0,0,0,2.851-2.85,42.707,42.707,0,0,0,.666-7.779A40.527,40.527,0,0,0,31.676-2.539ZM12.947,10.089V.392L21.366,5.24Zm0,0" transform="translate(404.825 388.76)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

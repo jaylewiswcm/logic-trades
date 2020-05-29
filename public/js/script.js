@@ -124,3 +124,7 @@ const buttonOut = (e) => {
   e.style.color = "#3f4045";
   e.children[1].style.color = "#f76d2f";
 };
+
+const viewMember = (e) => {
+  e.style.height = "500px";
+};
