@@ -1,0 +1,100 @@
+.team-container {
+  @extend .home-navigation;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // padding: 10% 0;
+  // box-sizing: border-box;
+
+  .team-grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 30px;
+    justify-items: center;
+    box-sizing: border-box;
+    position: relative;
+    .member-container {
+      display: flex;
+      flex-direction: column;
+      padding: 15px;
+      align-items: center;
+      background: white;
+      border-radius: 6px;
+      box-shadow: $divShadow;
+      box-sizing: border-box;
+      cursor: pointer;
+      transition: transform 0.5s;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+      h4 {
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+      p {
+        font-size: 1rem;
+        color: $orange;
+        margin-top: 5px;
+      }
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 409px) {
+  .team-grid {
+    grid-template-columns: repeat(1, 200px);
+  }
+  .member-container {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 410px) and (max-width: 750px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 190px);
+  }
+  .member-container {
+    width: 190px;
+    height: 270px;
+  }
+}
+@media screen and (min-width: 751px) and (max-width: 1000px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 190px);
+  }
+  .member-container {
+    width: 180px;
+    height: 280px;
+  }
+}
+@media screen and (min-width: 1001px) and (max-width: 1499px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 250px);
+  }
+  .member-container {
+    width: 250px;
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1500px) and (max-width: 1899px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 300px);
+  }
+  .member-container {
+    width: 300px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .team-grid {
+    grid-template-columns: repeat(4, 300px);
+  }
+  .member-container {
+    width: 300px;
+    height: 450px;
+  }
+}

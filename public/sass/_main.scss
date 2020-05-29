@@ -194,12 +194,24 @@ header {
   height: 100vh;
   background: white;
   display: flex;
+  flex-direction: column;
   box-shadow: $smallShadow;
+
   z-index: 1;
   h2 {
     align-self: center;
+
     text-align: center;
-    margin: 0 auto;
+    margin-top: auto;
+  }
+  p {
+    align-self: center;
+    font-size: 1.5rem;
+    color: $orange;
+    width: 40%;
+
+    text-align: center;
+    margin-bottom: auto;
   }
 }
 
