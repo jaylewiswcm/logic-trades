@@ -1867,7 +1867,6 @@ header .corner-signup {
   display: grid;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  gap: 30px;
   justify-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1922,11 +1921,12 @@ header .corner-signup {
 
 @media screen and (max-width: 409px) {
   .team-grid {
-    -ms-grid-columns: (200px)[1];
-        grid-template-columns: repeat(1, 200px);
+    -ms-grid-columns: (120px)[2];
+        grid-template-columns: repeat(2, 120px);
+    gap: 10px;
   }
   .member-container {
-    width: 200px;
+    width: 120px;
   }
 }
 
@@ -1934,6 +1934,7 @@ header .corner-signup {
   .team-grid {
     -ms-grid-columns: (190px)[2];
         grid-template-columns: repeat(2, 190px);
+    gap: 20px;
   }
   .member-container {
     width: 190px;
@@ -1945,6 +1946,7 @@ header .corner-signup {
   .team-grid {
     -ms-grid-columns: (190px)[3];
         grid-template-columns: repeat(3, 190px);
+    gap: 30px;
   }
   .member-container {
     width: 180px;
@@ -1956,6 +1958,7 @@ header .corner-signup {
   .team-grid {
     -ms-grid-columns: (250px)[3];
         grid-template-columns: repeat(3, 250px);
+    gap: 30px;
   }
   .member-container {
     width: 250px;
@@ -1967,6 +1970,7 @@ header .corner-signup {
   .team-grid {
     -ms-grid-columns: (300px)[4];
         grid-template-columns: repeat(4, 300px);
+    gap: 30px;
   }
   .member-container {
     width: 300px;
@@ -1978,6 +1982,7 @@ header .corner-signup {
   .team-grid {
     -ms-grid-columns: (300px)[4];
         grid-template-columns: repeat(4, 300px);
+    gap: 30px;
   }
   .member-container {
     width: 300px;
