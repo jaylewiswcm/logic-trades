@@ -1919,14 +1919,34 @@ header .corner-signup {
           transform: scale(1.1);
 }
 
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 214px) {
   .team-grid {
-    -ms-grid-columns: (120px)[2];
-        grid-template-columns: repeat(2, 120px);
-    gap: 10px;
+    -ms-grid-columns: (150px)[1];
+        grid-template-columns: repeat(1, 150px);
+    gap: 5%;
   }
   .member-container {
-    width: 120px;
+    width: 150px;
+  }
+  .member-container p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+}
+
+@media screen and (min-width: 215px) and (max-width: 409px) {
+  .team-grid {
+    -ms-grid-columns: (130px)[2];
+        grid-template-columns: repeat(2, 130px);
+    gap: 5%;
+  }
+  .member-container {
+    width: 130px;
+  }
+  .member-container h4,
+  .member-container p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
 }
 

@@ -43,14 +43,31 @@
     }
   }
 }
-
-@media screen and (max-width: 409px) {
+@media screen and (max-width: 214px) {
   .team-grid {
-    grid-template-columns: repeat(2, 120px);
-    gap: 10px;
+    grid-template-columns: repeat(1, 150px);
+    gap: 5%;
   }
   .member-container {
-    width: 120px;
+    width: 150px;
+    p {
+      align-self: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 215px) and (max-width: 409px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 130px);
+    gap: 5%;
+  }
+  .member-container {
+    width: 130px;
+
+    h4,
+    p {
+      align-self: flex-start;
+    }
   }
 }
 
